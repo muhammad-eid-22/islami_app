@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(items: [
         BottomNavigationBarItem(
-            icon: Icon(Icons.accessibility_new,), label: "me"),
+            icon: Icon(Icons.add,), label: "me"),
         BottomNavigationBarItem(icon: Icon(Icons.add_circle), label: "for")
       ]),
     );

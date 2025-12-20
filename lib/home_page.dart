@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -11,11 +12,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(
-            icon: Icon(Icons.accessibility_new,), label: "me"),
-        BottomNavigationBarItem(icon: Icon(Icons.add_circle), label: "for")
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.cyan,
+        items: [
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(
+              "assets/icons/svg_in_active/ic_quran_in_active.svg",
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.accessibility), label: "me"),
+        ],
+      ),
     );
   }
 }

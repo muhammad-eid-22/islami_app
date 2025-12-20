@@ -1,13 +1,17 @@
 flutter_native_splash:
-  color: "#ffffff"
-  image: assets/images/splash_screen.png
-  color_dark: "#121212"
-  image_dark: assets/images/splash_screen.png
+  android: true
+  ios: true
+
+  #  background_image: assets/images/splash.png
 
   android_12:
-    image: assets/images/splash_screen.png
-    icon_background_color: "#ffffff"
-    image_dark: assets/images/splash_screen.png
-    icon_background_color_dark: "#121212"
+    #    background_image: assets/images/splash.png
+    color: "#202020"
+    image: assets/images/masjid_logo.png
 
+  color: "#202020"
+  image: assets/images/masjid_logo.png
   web: false
+
+
+
